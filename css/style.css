@@ -1,0 +1,73 @@
+/* variáveis */
+:root {
+    --pageBackground: #26353e;
+    --cardBackground: #8844ee;
+    --fontColor: #fff;
+    --shadows: rgba(255, 255, 255, 0.3);
+}
+
+/* reset */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* estilos básicos */
+* {
+    font-family: 'Roboto', sans-serif;
+    color: var(--fontColor);
+    font-weight: bold
+}
+
+body {
+    background-color: var(--pageBackground);
+}
+
+body h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+article {
+    margin: 20px;
+    box-shadow: 0 0 10px var(--shadows);
+    border-radius: 10px;
+    background-color: var(--cardBackground);
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 50%;
+}
+
+/* mobile */
+* {
+    font-size: 20pt;
+}
+
+/* web e demais tamanhos */
+@media only screen and (min-width : 920px) {
+
+    * {
+        font-size: 14pt;
+    }
+
+    body {
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    article {
+        width: 25%;
+    }
+
+}
